@@ -1,12 +1,6 @@
-.content{
-    grid-area: c;
-    background-color: hotpink;
-  }
-  .content img{
+
+  .content .TopImage{
     width: 100%;
     height: 100px;
   }
 
-.item {
-    color: seagreen;
-}

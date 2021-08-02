@@ -2,9 +2,9 @@ import MyPosts from './MyPosts/MyPosts';
 import s from'./Profile.module.css';
 
 const Profile = () => {
-  return <div className={s.content} >
+  return <div>
     <div>
-      <img src='https://zastavok.net/ts/arhitektura/1452898870.jpg'></img>
+      <img className = {s.TopImage} src='https://zastavok.net/ts/arhitektura/1452898870.jpg'></img>
     </div>
       ava + description
     <div>
