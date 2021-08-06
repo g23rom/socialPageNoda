@@ -1,0 +1,57 @@
+.DialogMessage{
+    margin: 10px 0;
+    display: grid;
+    grid-template-areas:
+    "ava name"
+    "message message";
+    grid-template-columns: 60px 1fr;
+}
+
+.DialogMessageMe{
+    margin: 10px 0;
+    display: grid;
+    grid-template-areas:
+    "name ava"
+    "message message";
+    grid-template-columns: 1fr 60px;
+}
+
+.name{
+    grid-area: name;
+    margin: auto auto;
+}
+
+.message{
+    grid-area: message;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #f2ffff;
+    border-radius: 2px;
+    padding: 2px 9px;
+    margin: 4px 0;
+    user-select: none;
+    box-shadow: 0 0 2px 0px #0009;
+    transition: 0.2s;
+    color: #3D5A80;
+}
+
+.message:hover{
+    background-color: #E0FBFC;
+    transform: translateX(5px);
+}
+
+.avaCover {
+    /* flex-shrink: 0; */
+    height: 50px;
+    width: 50px;
+    background-color: #ff2424;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.avaCover img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}

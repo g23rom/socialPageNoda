@@ -1,19 +1,14 @@
+import s from "./Profile.module.css"
 import MyPosts from './MyPosts/MyPosts';
-import s from'./Profile.module.css';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = () => {
-  return <div>
-    <div>
-      <img className = {s.TopImage} src='https://zastavok.net/ts/arhitektura/1452898870.jpg'></img>
+  return (
+    <div className = {s.Profile}>
+      <ProfileInfo />
+      <MyPosts />
     </div>
-      ava + description
-    <div>
-      <img src='https://yt3.ggpht.com/a/AATXAJzBn0YrJpEiOmWr7hrzDJ4zr0ZhwHAPjZojzw=s900-c-k-c0xffffffff-no-rj-mo'></img>
-    </div>
-
-<MyPosts />
-
-  </div>
+  )
 }
 
 export default Profile;

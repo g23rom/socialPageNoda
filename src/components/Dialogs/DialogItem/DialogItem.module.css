@@ -1,0 +1,43 @@
+.NavLink{
+    text-decoration: none;
+}
+.dialogs{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #f2ffff;
+    border-radius: 10px;
+    padding: 2px 9px;
+    margin: 4px 0;
+    user-select: none;
+    box-shadow: 0 0 2px 0px #0009;
+    transition: 0.2s;
+}
+
+.active{
+    background-color: #fff9e0;
+}
+
+.dialogs:hover{
+    background-color: #E0FBFC;
+    transform: translateX(5px);
+}
+
+.avaCover {
+    height: 50px;
+    width: 50px;
+    background-color: #ff2424;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.avaCover img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.avaName{
+    color: #3D5A80;
+    margin-left: 8px;
+}
