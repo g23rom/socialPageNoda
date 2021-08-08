@@ -18,3 +18,12 @@
 .items{
     background: #e0e0e0;
 }
+
+.textarea{
+    width: 97%;
+    margin: 20px 0 0 0;
+}
+
+.btn{
+    width: 100%;
+}

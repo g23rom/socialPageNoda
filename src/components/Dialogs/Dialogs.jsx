@@ -11,7 +11,12 @@ const Dialogs = (props) => {
             </div>
 
             <div className={s.block}>
+            
                 { props.messageData.map(el => (<DialogMessage name={el.name} Messages={el.Messages} />))} 
+            
+                <textarea className = {s.textarea}></textarea> 
+            
+                <button className = {s.btn}>Отправить сообщение</button>
             </div>
 
         </div>

@@ -1,10 +1,24 @@
 import s from './MyPosts.module.css';
-import Post from './Post/Post'
+import Post from './Post/Post';
+import React, {Component} from 'react'; 
 
 
 
 const MyPosts = (props) => {
+
+  let newPostElement = React.createRef();
+
+  let addPost = () =>{
+    let text = newPostElement.current.value;
+    props.addPost(text);
+    //props.updateNewPostText('');
+  };
   
+  let onPostChange = () =>{
+    let text = newPostElement.current.value;
+    props.updateNewPostText(text);
+  }
+
   return (
     <div>
       <h2>MyPosts</h2>
@@ -14,11 +28,18 @@ const MyPosts = (props) => {
       </div>
 
       <div>
-        <textarea></textarea>
+        <textarea
+          className = {s.textarea}
+          onChange = {onPostChange}
+          ref={newPostElement}
+          value = {props.newPostText}/>
       </div>
 
       <div>
-        <button>NewPost</button>
+        <button
+        className = {s.button}
+        onClick = { addPost }>NewPost
+        </button>
       </div>
 
 
